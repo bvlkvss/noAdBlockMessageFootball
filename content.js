@@ -6,7 +6,8 @@ let observer = new MutationObserver((mutations) => {
             let node = mutation.addedNodes[i]
             if (node == document.getElementById("tc7e")) {
                 console.log("here");
-                node.id = "notTc7e";
+                node.style.display = "none";
+                //node.id = "notTc7e";
                 observer.disconnect()
             }
         }
